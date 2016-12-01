@@ -12,6 +12,7 @@
   var MainController = function($scope, $http) {
     var onUserComplete = function(response) {
         $scope.user = response.data;
+        $scope.error = ""; // Problem Solved :)
     };
 
     var onError = function(reason) {
